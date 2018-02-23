@@ -1,0 +1,14 @@
+<div style="padding: 25px;">
+	<md-input-container md-no-float>
+		<label>Your palindrome here</label>
+		<input ng-model="palindromeTxt">
+	</md-input-container>
+	<md-button md-no-ink class="md-primary" ng-click="testPalindrome()">Go!</md-button>
+	<md-list ng-cloak>
+		<md-subheader class="md-no-sticky">List of Palindromes</md-subheader>
+		<md-list-item ng-repeat="palindrome in palindromes">
+			<p> {{ palindrome.text }}  | {{palindrome.isPalindromeTxt}}</p>
+		</md-list-item>
+	</md-list
+
+</div>
